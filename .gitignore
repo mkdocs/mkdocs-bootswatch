@@ -1,0 +1,6 @@
+dist/
+htmlcov/
+.tox/
+mkdocs_bootswatch.egg-info/
+*.pyc
+.coverage
