@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "MkDocs Bootstrap Theme\n\n\nThis project provides themes for the different Bootswatch themes for the \nMkDocs\n project.\n\n\nInstallation\n\n\nInstall the theme with pip:\n\n\npip install mkdocs-bootswatch\n\n\n\nAfter the theme is installed, edit your \nmkdocs.yml\n file and set the \ntheme\n\nto one of the following bootwatch themes that have been installed.\n\n\n\n\namelia\n\n\ncerulean\n\n\ncosmo\n\n\ncyborg\n\n\nflatly\n\n\njournal\n\n\nreadable\n\n\nsimplex\n\n\nslate\n\n\nspacelab\n\n\nunited\n\n\nyeti\n\n\n\n\nFor example:\n\n\ntheme: amelia\n\n\n\nOr:\n\n\ntheme: yeti\n\n\n\nExample\n\n\nThis \ndocumentation\n is rendered with the Bootswatch \nFlatly\n theme.\nPreviews of the other themes can be seen below.\n\n\nAmelia\n\n\n\n\nCerulean\n\n\n\n\nCosmo\n\n\n\n\nCyborg\n\n\n\n\nFlatly\n\n\n\n\nJournal\n\n\n\n\nReadable\n\n\n\n\nSimplex\n\n\n\n\nSlate\n\n\n\n\nSpacelab\n\n\n\n\nUnited\n\n\n\n\nYeti", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#mkdocs-bootstrap-theme", 
+            "text": "This project provides themes for the different Bootswatch themes for the  MkDocs  project.", 
+            "title": "MkDocs Bootstrap Theme"
+        }, 
+        {
+            "location": "/#installation", 
+            "text": "Install the theme with pip:  pip install mkdocs-bootswatch  After the theme is installed, edit your  mkdocs.yml  file and set the  theme \nto one of the following bootwatch themes that have been installed.   amelia  cerulean  cosmo  cyborg  flatly  journal  readable  simplex  slate  spacelab  united  yeti   For example:  theme: amelia  Or:  theme: yeti", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/#example", 
+            "text": "This  documentation  is rendered with the Bootswatch  Flatly  theme.\nPreviews of the other themes can be seen below.  Amelia   Cerulean   Cosmo   Cyborg   Flatly   Journal   Readable   Simplex   Slate   Spacelab   United   Yeti", 
+            "title": "Example"
+        }
+    ]
+}
