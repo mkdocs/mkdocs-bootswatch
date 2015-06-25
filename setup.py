@@ -10,7 +10,7 @@ setup(
     license='BSD',
     description='Bootswatch themes for MkDocs',
     author='Dougal Matthews',
-    author_email='dougal@dougalmatthews.com.com',
+    author_email='dougal@dougalmatthews.com',
     packages=find_packages(),
     include_package_data=True,
     entry_points={
