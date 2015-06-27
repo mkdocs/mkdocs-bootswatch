@@ -17,8 +17,68 @@
         }, 
         {
             "location": "/#example", 
-            "text": "This  documentation  is rendered with the Bootswatch  Flatly  theme.\nPreviews of the other themes can be seen below.  Amelia   Cerulean   Cosmo   Cyborg   Flatly   Journal   Readable   Simplex   Slate   Spacelab   United   Yeti", 
+            "text": "This  documentation  is rendered with the Bootswatch  Flatly  theme.\nPreviews of the other themes can be seen below.", 
             "title": "Example"
+        }, 
+        {
+            "location": "/#amelia", 
+            "text": "", 
+            "title": "Amelia"
+        }, 
+        {
+            "location": "/#cerulean", 
+            "text": "", 
+            "title": "Cerulean"
+        }, 
+        {
+            "location": "/#cosmo", 
+            "text": "", 
+            "title": "Cosmo"
+        }, 
+        {
+            "location": "/#cyborg", 
+            "text": "", 
+            "title": "Cyborg"
+        }, 
+        {
+            "location": "/#flatly", 
+            "text": "", 
+            "title": "Flatly"
+        }, 
+        {
+            "location": "/#journal", 
+            "text": "", 
+            "title": "Journal"
+        }, 
+        {
+            "location": "/#readable", 
+            "text": "", 
+            "title": "Readable"
+        }, 
+        {
+            "location": "/#simplex", 
+            "text": "", 
+            "title": "Simplex"
+        }, 
+        {
+            "location": "/#slate", 
+            "text": "", 
+            "title": "Slate"
+        }, 
+        {
+            "location": "/#spacelab", 
+            "text": "", 
+            "title": "Spacelab"
+        }, 
+        {
+            "location": "/#united", 
+            "text": "", 
+            "title": "United"
+        }, 
+        {
+            "location": "/#yeti", 
+            "text": "", 
+            "title": "Yeti"
         }
     ]
 }
