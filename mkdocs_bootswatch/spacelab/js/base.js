@@ -22,8 +22,8 @@ $(document).ready(function() {
     }
 
     $search_modal.on('shown.bs.modal', function () {
-    	$search_modal.find('#mkdocs-search-query').focus();
-	});
+        $search_modal.find('#mkdocs-search-query').focus();
+    });
 });
 
 
