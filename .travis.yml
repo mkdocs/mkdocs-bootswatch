@@ -1,0 +1,25 @@
+sudo: false
+language: python
+python: '3.5'
+env:
+- TOXENV=py27
+- TOXENV=py33
+- TOXENV=py34
+- TOXENV=py35
+install:
+- pip install tox
+script:
+- git clean -f -d -x
+- tox
+matrix:
+  fast_finish: true
+deploy:
+  provider: pypi
+  user: mkdocsdeploy
+  distributions: sdist bdist_wheel
+  password:
+    secure: 0HsKViPmpI13uG1wEeIQ6fRvdX4x1XZNufzQgMyhEDKj0Shuw5q7xt+KAuAULBpNbOZj1XzgdCmWxC6fZq2K5/Lm3aHZc2ZXDEhfVkIC8kCGCbPE/Ziq82CA2iyOWSdkLRdssaYebKeZy0qi41Y8Xxag7xGHo/atoUPL5Aegp6KBDJ6Q4160zyAmegy3XFR47m/43fyH5CoUlJf72Qf5/mhIVE0HqG/pYs8jpXX4I0ICJLmlx8UQNdAu2ikd1316XwTdl+VwRzZTfUpJtaN0vldGJ5cQKFU7Iil7jiPUuB5WVzZqYC87Y9/9XCwhwXAWQCt+AjDrhaFEaU0koDgUreIUE3xOBu7NeUqRZuR9aGbQgLvTcoLL6NcWVEJi9qtOynWPgVCjNUU/RyiNTXtPwGBjaeU5ZN7cUukLjaKwCNxglyj/kOo2AwlK9x54FdxCfCs07hjmoBHhQyHSTk+Lk/w6xAxI7pWOvM+oacUQaToWgq6FBnua5VfYVe92MECNCDB6Ua2DRsW3QZtLnQz6MQaJCBv3nIVw1QhQUWwHohfxidgq8F5wleEf2Bd+vTKXGFD0uTDzP6NKuc26cbm3nIJt5u8hCd/Sdc+gf+fP3N7fIgG0grmt6bbb8u5MiOBvKwfQjgFiN9Xt3KGwWQowpOfUfYOD23sWX0nxnaLaAJA=
+  on:
+    tags: true
+    repo: mkdocs/mkdocs-bootswatch
+    condition: "$TOXENV = py35"
