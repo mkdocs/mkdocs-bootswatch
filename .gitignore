@@ -2,3 +2,4 @@
 dist/
 mkdocs_bootswatch.egg-info/
 site/
+.tox
