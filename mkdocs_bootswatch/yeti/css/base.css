@@ -153,14 +153,3 @@ div.col-md-9 img {
 .dropdown-submenu:hover>a:after {
     border-left-color: #fff;
 }
-
-
-.dropdown-submenu.pull-left {
-    float: none;
-}
-
-/* pull sub menu left (currently not used)*/
-.dropdown-submenu.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
-}
