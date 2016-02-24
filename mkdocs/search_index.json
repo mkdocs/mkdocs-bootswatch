@@ -2,23 +2,23 @@
     "docs": [
         {
             "location": "/",
-            "text": "MkDocs Bootstrap Theme\n\n\nThis project provides themes for the different Bootswatch themes for the \nMkDocs\n project.\n\n\nInstallation\n\n\nInstall the theme with pip:\n\n\npip install mkdocs-bootswatch\n\n\n\nAfter the theme is installed, edit your \nmkdocs.yml\n file and set the \ntheme\n\nto one of the following bootwatch themes that have been installed.\n\n\n\n\namelia\n\n\ncerulean\n\n\ncosmo\n\n\ncyborg\n\n\nflatly\n\n\njournal\n\n\nreadable\n\n\nsimplex\n\n\nslate\n\n\nspacelab\n\n\nunited\n\n\nyeti\n\n\n\n\nFor example:\n\n\ntheme: amelia\n\n\n\nOr:\n\n\ntheme: yeti\n\n\n\nExample\n\n\nThis \ndocumentation\n is rendered with the Bootswatch \nFlatly\n theme.\nPreviews of the other themes can be seen below.\n\n\nAmelia\n\n\n\n\nCerulean\n\n\n\n\nCosmo\n\n\n\n\nCyborg\n\n\n\n\nFlatly\n\n\n\n\nJournal\n\n\n\n\nReadable\n\n\n\n\nSimplex\n\n\n\n\nSlate\n\n\n\n\nSpacelab\n\n\n\n\nUnited\n\n\n\n\nYeti",
+            "text": "MkDocs Bootstrap Theme\n\n\nThis project provides \nMkDocs\n themes for the different Bootstrap themes\nprovided by the \nBootswatch\n project.\n\n\nInstallation & Usage\n\n\nInstall the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.\n\n\npip install mkdocs-bootswatch\n\n\n\nAfter installation is complete, edit your \nmkdocs.yml\n config file and set the\n\ntheme\n to one of the following Bootwatch themes included. The full list is as\nfollows:\n\n\n\n\namelia\n\n\ncerulean\n\n\ncosmo\n\n\ncyborg\n\n\nflatly\n\n\njournal\n\n\nreadable\n\n\nsimplex\n\n\nslate\n\n\nspacelab\n\n\nunited\n\n\nyeti\n\n\n\n\nFor example:\n\n\ntheme: amelia\n\n\n\nOr:\n\n\ntheme: yeti\n\n\n\nScreenshots\n\n\nThis \ndocumentation\n is rendered with the Bootswatch \nFlatly\n theme.\nPreviews of the other themes can be seen below.\n\n\nAmelia\n\n\n\n\nCerulean\n\n\n\n\nCosmo\n\n\n\n\nCyborg\n\n\n\n\nFlatly\n\n\n\n\nJournal\n\n\n\n\nReadable\n\n\n\n\nSimplex\n\n\n\n\nSlate\n\n\n\n\nSpacelab\n\n\n\n\nUnited\n\n\n\n\nYeti",
             "title": "Home"
         },
         {
             "location": "/#mkdocs-bootstrap-theme",
-            "text": "This project provides themes for the different Bootswatch themes for the  MkDocs  project.",
+            "text": "This project provides  MkDocs  themes for the different Bootstrap themes\nprovided by the  Bootswatch  project.",
             "title": "MkDocs Bootstrap Theme"
         },
         {
-            "location": "/#installation",
-            "text": "Install the theme with pip:  pip install mkdocs-bootswatch  After the theme is installed, edit your  mkdocs.yml  file and set the  theme \nto one of the following bootwatch themes that have been installed.   amelia  cerulean  cosmo  cyborg  flatly  journal  readable  simplex  slate  spacelab  united  yeti   For example:  theme: amelia  Or:  theme: yeti",
-            "title": "Installation"
+            "location": "/#installation-usage",
+            "text": "Install the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.  pip install mkdocs-bootswatch  After installation is complete, edit your  mkdocs.yml  config file and set the theme  to one of the following Bootwatch themes included. The full list is as\nfollows:   amelia  cerulean  cosmo  cyborg  flatly  journal  readable  simplex  slate  spacelab  united  yeti   For example:  theme: amelia  Or:  theme: yeti",
+            "title": "Installation &amp; Usage"
         },
         {
-            "location": "/#example",
+            "location": "/#screenshots",
             "text": "This  documentation  is rendered with the Bootswatch  Flatly  theme.\nPreviews of the other themes can be seen below.",
-            "title": "Example"
+            "title": "Screenshots"
         },
         {
             "location": "/#amelia",
@@ -79,6 +79,26 @@
             "location": "/#yeti",
             "text": "",
             "title": "Yeti"
+        },
+        {
+            "location": "/sub-dir/sub-page/",
+            "text": "Sub Page 1\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "title": "Sub page"
+        },
+        {
+            "location": "/sub-dir/sub-page/#sub-page-1",
+            "text": "This page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "title": "Sub Page 1"
+        },
+        {
+            "location": "/sub-dir/sub-dir-2/sub-page-2/",
+            "text": "Sub Page 2\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "title": "Sub page 2"
+        },
+        {
+            "location": "/sub-dir/sub-dir-2/sub-page-2/#sub-page-2",
+            "text": "This page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "title": "Sub Page 2"
         }
     ]
 }

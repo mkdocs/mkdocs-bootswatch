@@ -9,4 +9,20 @@
     </url>
     
 
+    
+        
+    <url>
+     <loc>http://mkdocs.github.io/mkdocs-bootswatch//sub-dir/sub-page/</loc>
+     <lastmod>2016-02-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://mkdocs.github.io/mkdocs-bootswatch/</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>
