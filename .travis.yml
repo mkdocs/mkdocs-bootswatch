@@ -2,10 +2,13 @@ sudo: false
 language: python
 python: '3.5'
 env:
-- TOXENV=py27
-- TOXENV=py33
-- TOXENV=py34
-- TOXENV=py35
+  matrix:
+  - TOXENV=py27
+  - TOXENV=py33
+  - TOXENV=py34
+  - TOXENV=py35
+  global:
+    secure: zkN3NOHjUUpDam94unXfVwNN/KtYK9dCCLflaw5LLdFzlqnqIm0mQwe36O1YzvF/BKi/wo1mB6p5GYEjs0WfqkIzE3NZ1ZT82B/43ioObeKlmmpsPfk9c2DV2HvtS66jYOuX067CWF1obVHc87tCn1MKNQJKPNvY1Ek72zOdVf95F2zKx7w2sGChGhmQQ6rJ7B1eA4/8EbIT1VpWpL+qkWJ5wHIw1CZj5BfiTLh8H+qDdiK0zvUNFiv/R0iVnZTeUu7DhJSayaC7B2Vro0DD7rYmSm4+3geNksSDojJfN3SCrnEOxiJbyWc72RB2TPScGbPYT0LhK+NlThK7qgYi3i7EpUE6pkE0nI41i88/VXalGDHXTUIHeJj4PkGBRGqbgNxQE2PoQenPB3lAUTTacNADICw2OO9qX4x7Rt83SCu2blOvccdhf0XTERA2fObnXw+K3jNhzbgQTc68ohg7Yg/X85wb8bX7YphJrRHBdTvV8MVT5i7Sxc5mJfCsgmFii5GNXa7xGk/I7lMnGgzqNTb18bfQy7HfMEGcDyyPq89Pby/DI4vvdLuvZXkgXd2GLWLNuP0I+Jm9HOACQcfBZxp4+Wd6oiexRqkUNJa52Rp6tmrxhph8cqzcOG2YIwk9CM/khYJF+8MAYUYCzmSuf/aLyz7BZvicYSzPo4P7tCM=
 install:
 - pip install tox
 script:
@@ -23,3 +26,10 @@ deploy:
     tags: true
     repo: mkdocs/mkdocs-bootswatch
     condition: "$TOXENV = py35"
+after_deploy:
+- git config user.name "Dougal Matthews"
+- git config user.email "dougal@dougalmatthews.com"
+- git remote add gh-token "https://${GH_TOKEN}@github.com/mkdocs/mkdocs-bootswatch.git";
+- git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+- pip install mkdocs -U;
+- if [[ $TOXENV == "py35" ]]; then mkdocs gh-deploy -v --clean --remote-name gh-token; fi;
