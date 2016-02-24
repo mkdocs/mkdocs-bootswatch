@@ -1,15 +1,20 @@
 # MkDocs Bootstrap Theme
 
-This project provides themes for the different Bootswatch themes for the [MkDocs] project.
+This project provides [MkDocs] themes for the different Bootstrap themes
+provided by the [Bootswatch] project.
 
-## Installation
 
-Install the theme with pip:
+## Installation & Usage
+
+Install the collection of themes with pip, which is hopefully how you
+installed MkDocs.
 
     pip install mkdocs-bootswatch
 
-After the theme is installed, edit your [mkdocs.yml] file and set the [theme]
-to one of the following bootwatch themes that have been installed.
+
+After installation is complete, edit your [mkdocs.yml] config file and set the
+[theme] to one of the following Bootwatch themes included. The full list is as
+follows:
 
  - [amelia](#amelia)
  - [cerulean](#cerulean)
@@ -32,59 +37,49 @@ Or:
 
     theme: yeti
 
-## Example
+## Screenshots
 
 This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
 Previews of the other themes can be seen below.
 
-#### Amelia
+### Amelia
+![Amelia](/screenshots/amelia.png)
 
-![Amelia](http://bootswatch.com/2/amelia/thumbnail.png)
+### Cerulean
+![Cerulean](/screenshots/cerulean.png)
 
-#### Cerulean
+### Cosmo
+![Cosmo](/screenshots/cosmo.png)
 
-![Cerulean](http://bootswatch.com/cerulean/thumbnail.png)
+### Cyborg
+![Cyborg](/screenshots/cyborg.png)
 
-#### Cosmo
+### Flatly
+![Flatly](/screenshots/flatly.png)
 
-![Cosmo](http://bootswatch.com/cosmo/thumbnail.png)
+### Journal
+![Journal](/screenshots/journal.png)
 
-#### Cyborg
+### Readable
+![Readable](/screenshots/readable.png)
 
-![Cyborg](http://bootswatch.com/cyborg/thumbnail.png)
+### Simplex
+![Simplex](/screenshots/simplex.png)
 
-#### Flatly
+### Slate
+![Slate](/screenshots/slate.png)
 
-![Flatly](http://bootswatch.com/flatly/thumbnail.png)
+### Spacelab
+![Spacelab](/screenshots/spacelab.png)
 
-#### Journal
+### United
+![United](/screenshots/united.png)
 
-![Journal](http://bootswatch.com/journal/thumbnail.png)
+### Yeti
+![Yeti](/screenshots/yeti.png)
 
-#### Readable
-
-![Readable](http://bootswatch.com/readable/thumbnail.png)
-
-#### Simplex
-
-![Simplex](http://bootswatch.com/simplex/thumbnail.png)
-
-#### Slate
-
-![Slate](http://bootswatch.com/slate/thumbnail.png)
-
-#### Spacelab
-
-![Spacelab](http://bootswatch.com/spacelab/thumbnail.png)
-
-#### United
-
-![United](http://bootswatch.com/united/thumbnail.png)
-
-#### Yeti
-
-![Yeti](http://bootswatch.com/yeti/thumbnail.png)
 [Mkdocs]: http://www.mkdocs.org
 [mkdocs.yml]: http://www.mkdocs.org/user-guide/configuration/
 [theme]: http://www.mkdocs.org/user-guide/configuration/#theme
 [documentation]: http://mkdocs.github.io/mkdocs-bootstrap/
+[Bootswatch]: https://bootswatch.com/
