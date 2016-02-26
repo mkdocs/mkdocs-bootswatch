@@ -26,7 +26,23 @@ div.source-links {
 }
 
 div.col-md-9 img {
-  max-width: 100%;
+    max-width: 100%;
+}
+
+code {
+    padding: 1px 3px;
+    background: #ecf0f1;
+    border: solid 1px #ccc;
+    color: #7b8a8b;
+}
+
+pre code {
+    background: transparent;
+    border: none;
+}
+
+a > code {
+    color: #18bc9c;
 }
 
 /*
