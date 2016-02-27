@@ -37,6 +37,11 @@ Or:
 
     theme: yeti
 
+In addition, you can request an inverted navigation header:
+
+    extra:
+        theme_inverse: true
+
 ## Screenshots
 
 This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
