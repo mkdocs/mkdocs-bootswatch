@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "MkDocs Bootstrap Theme\n\n\nThis project provides \nMkDocs\n themes for the different Bootstrap themes\nprovided by the \nBootswatch\n project.\n\n\nInstallation & Usage\n\n\nInstall the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.\n\n\npip install mkdocs-bootswatch\n\n\n\nAfter installation is complete, edit your \nmkdocs.yml\n config file and set the\n\ntheme\n to one of the following Bootwatch themes included. The full list is as\nfollows:\n\n\n\n\namelia\n\n\ncerulean\n\n\ncosmo\n\n\ncyborg\n\n\nflatly\n\n\njournal\n\n\nreadable\n\n\nsimplex\n\n\nslate\n\n\nspacelab\n\n\nunited\n\n\nyeti\n\n\n\n\nFor example:\n\n\ntheme: amelia\n\n\n\nOr:\n\n\ntheme: yeti\n\n\n\nScreenshots\n\n\nThis \ndocumentation\n is rendered with the Bootswatch \nFlatly\n theme.\nPreviews of the other themes can be seen below.\n\n\nAmelia\n\n\n\n\nCerulean\n\n\n\n\nCosmo\n\n\n\n\nCyborg\n\n\n\n\nFlatly\n\n\n\n\nJournal\n\n\n\n\nReadable\n\n\n\n\nSimplex\n\n\n\n\nSlate\n\n\n\n\nSpacelab\n\n\n\n\nUnited\n\n\n\n\nYeti",
+            "text": "MkDocs Bootstrap Theme\n#\n\n\nThis project provides \nMkDocs\n themes for the different Bootstrap themes\nprovided by the \nBootswatch\n project.\n\n\nInstallation & Usage\n#\n\n\nInstall the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.\n\n\npip install mkdocs-bootswatch\n\n\n\nAfter installation is complete, edit your \nmkdocs.yml\n config file and set the\n\ntheme\n to one of the following Bootwatch themes included. The full list is as\nfollows:\n\n\n\n\namelia\n\n\ncerulean\n\n\ncosmo\n\n\ncyborg\n\n\nflatly\n\n\njournal\n\n\nreadable\n\n\nsimplex\n\n\nslate\n\n\nspacelab\n\n\nunited\n\n\nyeti\n\n\n\n\nFor example:\n\n\ntheme: amelia\n\n\n\nOr:\n\n\ntheme: yeti\n\n\n\nIn addition, you can request an inverted navigation header:\n\n\nextra:\n    theme_inverse: true\n\n\n\nScreenshots\n#\n\n\nThis \ndocumentation\n is rendered with the Bootswatch \nFlatly\n theme.\nPreviews of the other themes can be seen below.\n\n\nAmelia\n#\n\n\n\n\nCerulean\n#\n\n\n\n\nCosmo\n#\n\n\n\n\nCyborg\n#\n\n\n\n\nFlatly\n#\n\n\n\n\nJournal\n#\n\n\n\n\nReadable\n#\n\n\n\n\nSimplex\n#\n\n\n\n\nSlate\n#\n\n\n\n\nSpacelab\n#\n\n\n\n\nUnited\n#\n\n\n\n\nYeti\n#",
             "title": "Home"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#installation-usage",
-            "text": "Install the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.  pip install mkdocs-bootswatch  After installation is complete, edit your  mkdocs.yml  config file and set the theme  to one of the following Bootwatch themes included. The full list is as\nfollows:   amelia  cerulean  cosmo  cyborg  flatly  journal  readable  simplex  slate  spacelab  united  yeti   For example:  theme: amelia  Or:  theme: yeti",
+            "text": "Install the collection of themes with pip, which is hopefully how you\ninstalled MkDocs.  pip install mkdocs-bootswatch  After installation is complete, edit your  mkdocs.yml  config file and set the theme  to one of the following Bootwatch themes included. The full list is as\nfollows:   amelia  cerulean  cosmo  cyborg  flatly  journal  readable  simplex  slate  spacelab  united  yeti   For example:  theme: amelia  Or:  theme: yeti  In addition, you can request an inverted navigation header:  extra:\n    theme_inverse: true",
             "title": "Installation &amp; Usage"
         },
         {
@@ -81,8 +81,23 @@
             "title": "Yeti"
         },
         {
+            "location": "/examples/",
+            "text": "Theme Examples\n#\n\n\nThis page is full of examples so you can see how this theme renders different\naspects of the documentation.\n\n\nCode highlighting\n#\n\n\nHere is a Python code block.\n\n\na,b = 0,1\ndef fib():\n    global a,b\n    while True:\n        a,b = b, a+b\n        yield a\n\n\n\n\nThis is an example of inline code: \nf = fib()\n and \nf.next()\n.\n\n\nYou can also use inline code as a link: \nindex.md",
+            "title": "Examples"
+        },
+        {
+            "location": "/examples/#theme-examples",
+            "text": "This page is full of examples so you can see how this theme renders different\naspects of the documentation.",
+            "title": "Theme Examples"
+        },
+        {
+            "location": "/examples/#code-highlighting",
+            "text": "Here is a Python code block.  a,b = 0,1\ndef fib():\n    global a,b\n    while True:\n        a,b = b, a+b\n        yield a  This is an example of inline code:  f = fib()  and  f.next() .  You can also use inline code as a link:  index.md",
+            "title": "Code highlighting"
+        },
+        {
             "location": "/sub-dir/sub-page/",
-            "text": "Sub Page 1\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "text": "Sub Page 1\n#\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
             "title": "Sub page"
         },
         {
@@ -92,7 +107,7 @@
         },
         {
             "location": "/sub-dir/sub-dir-2/sub-page-2/",
-            "text": "Sub Page 2\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
+            "text": "Sub Page 2\n#\n\n\nThis page is simply here to demonstrate multiple levels of navigation in the\ntheme.",
             "title": "Sub page 2"
         },
         {
