@@ -60,11 +60,14 @@ div.col-md-9 img {
     max-width: 100%;
 }
 
-code {
-    padding: 1px 3px;
+pre, code {
     background: #0d747c;
     border: solid 1px #0a565c;
     color: #fff;
+}
+
+code {
+    padding: 1px 3px;
 }
 
 pre code {
