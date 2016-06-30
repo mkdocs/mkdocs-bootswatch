@@ -2,6 +2,12 @@ body {
     padding-top: 70px;
 }
 
+footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 /*
  * The code below adds some padding to the top of the current anchor target so
  * that, when navigating to it, the header isn't hidden by the navbar at the
