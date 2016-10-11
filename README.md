@@ -14,3 +14,14 @@ http://mkdocs.github.io/mkdocs-bootswatch/
 [pypi-v-link]: https://pypi.python.org/pypi/mkdocs-bootswatch
 [travis-image]: https://img.shields.io/travis/mkdocs/mkdocs-bootswatch/master.png
 [travis-link]: https://travis-ci.org/mkdocs/mkdocs-bootswatch
+
+## Contributing
+
+Any contributions should make changes to the files in the `src` directory. Files
+in the `src/_base` directory are common to all themes and any files in the
+`src/<theme name>` directory are specific to `<theme name>`.
+
+After the `src` files are updated, run the command `python setup.py gen_themes`,
+which will update the compiled themes in the `mkdocs_bootswatch` directory. When
+preparing a patch (pull request), be sure to include the changes in both the
+`src` directory and the `mkdocs_bootswatch` directory.
