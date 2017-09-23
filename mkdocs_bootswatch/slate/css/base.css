@@ -60,11 +60,14 @@ ul.nav .main {
     }
 }
 
-code {
-    padding: 1px 3px;
+pre, code {
     background: #1c1e22;
     border: solid 1px #0c0d0e;
     color: #c8c8c8;
+}
+
+code {
+    padding: 1px 3px;
 }
 
 pre code {

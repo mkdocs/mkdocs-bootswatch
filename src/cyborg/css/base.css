@@ -60,9 +60,10 @@ ul.nav .main {
     }
 }
 
-code {
+pre, code {
     background: #151515;
     color: #888;
+    border: 1px solid #030303;
 }
 
 pre code {
