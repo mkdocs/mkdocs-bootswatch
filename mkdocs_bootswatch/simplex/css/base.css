@@ -91,6 +91,73 @@ footer {
     margin-top: 50px;
 }
 
+/* Style the admonitions. */
+
+.admonition {
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.admonition > .admonition-title {
+    margin: 0;
+    padding: 10px 15px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    background-color: #fcfcfc;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.admonition > * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.admonition > *:not(.admonition-title):first-of-type,
+.admonition > .admonition-title + * {
+    margin-top: 15px;
+}
+
+.admonition > *:last-child {
+    margin-bottom: 15px;
+}
+
+/* Style each kind of admonition. */
+
+.admonition.note, .admonition.note > .admonition-title {
+    border-color: #029acf;
+}
+
+.admonition.note > .admonition-title {
+    color: #fff;
+    background-color: #029acf;
+}
+
+.admonition.warning, .admonition.warning > .admonition-title {
+    border-color: #9b479f;
+}
+
+.admonition.warning > .admonition-title {
+    color: #fff;
+    background-color: #9b479f;
+}
+
+.admonition.danger, .admonition.danger > .admonition-title {
+    border-color: #d9831f;
+}
+
+.admonition.danger > .admonition-title {
+    color: #fff;
+    background-color: #d9831f;
+}
+
 /*
  * Side navigation
  *

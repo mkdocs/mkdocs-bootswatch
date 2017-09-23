@@ -84,7 +84,7 @@ a:hover code, a:focus code {
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 30px;F
     margin-bottom: 10px;
     text-align: center;
     font-weight: 200;
@@ -92,6 +92,59 @@ footer {
 
 .modal-dialog {
     margin-top: 60px;
+}
+
+/* Style the admonitions. */
+
+.admonition {
+    margin-bottom: 21px;
+    border: 1px solid #27666d;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #3cb9c6;
+}
+
+.admonition > .admonition-title {
+    margin: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #27666d;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    background-color: #8ad5dc;
+    font-family: 'Lobster', cursive;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.admonition > * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.admonition > *:not(.admonition-title):first-of-type,
+.admonition > .admonition-title + * {
+    margin-top: 15px;
+}
+
+.admonition > *:last-child {
+    margin-bottom: 15px;
+}
+
+/* Style each kind of admonition. */
+
+.admonition.note > .admonition-title {
+    background-color: #4d3a7d;
+}
+
+.admonition.warning > .admonition-title {
+    background-color: #df6e1e;
+}
+
+.admonition.danger > .admonition-title {
+    background-color: #ad1d28;
 }
 
 /*
