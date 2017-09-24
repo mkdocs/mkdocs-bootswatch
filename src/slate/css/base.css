@@ -90,6 +90,58 @@ footer {
     margin-top: 60px;
 }
 
+/* Style the admonitions. */
+
+.admonition {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #2e3338;
+}
+
+.admonition > .admonition-title {
+    margin: 0;
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    background-color: #3e444c;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.admonition > * {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.admonition > *:not(.admonition-title):first-of-type,
+.admonition > .admonition-title + * {
+    margin-top: 15px;
+}
+
+.admonition > *:last-child {
+    margin-bottom: 15px;
+}
+
+/* Style each kind of admonition. */
+
+.admonition.note > .admonition-title {
+    background-color: #5bc0de;
+}
+
+.admonition.warning > .admonition-title {
+    background-color: #f89406;
+}
+
+.admonition.danger > .admonition-title {
+    background-color: #ee5f5b;
+}
+
 /*
  * Side navigation
  *
