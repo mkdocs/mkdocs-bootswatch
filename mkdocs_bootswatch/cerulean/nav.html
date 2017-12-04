@@ -46,11 +46,13 @@
 
             <ul class="nav navbar-nav navbar-right">
               {%- block search_button %}
+                {%- if 'search' in config['plugins'] %}
                 <li>
                     <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                {%- endif %}
               {%- endblock %}
 
               {%- block next_prev %}
@@ -69,15 +71,28 @@
               {%- endblock %}
 
               {%- block repo %}
-                {%- if config.repo_url %}
+                {%- if page and page.edit_url %}
+                    <li>
+                        <a href="{{ page.edit_url }}">
+                            {%- if config.repo_name == 'GitHub' -%}
+                                <i class="fa fa-github"></i> Edit on {{ config.repo_name }}
+                            {%- elif config.repo_name == 'Bitbucket' -%}
+                                <i class="fa fa-bitbucket"></i> Edit on {{ config.repo_name }}
+                            {%- else -%}
+                            Edit on {{ config.repo_name }}
+                            {%- endif -%}
+                        </a>
+                    </li>
+                {%- elif config.repo_url %}
                     <li>
                         <a href="{{ config.repo_url }}">
-                            {%- if config.repo_name == 'GitHub' %}
-                                <i class="fa fa-github"></i>
+                            {%- if config.repo_name == 'GitHub' -%}
+                                <i class="fa fa-github"></i> {{ config.repo_name }}
                             {%- elif config.repo_name == 'Bitbucket' -%}
-                                <i class="fa fa-bitbucket"></i>
-                            {%- endif -%}
+                                <i class="fa fa-bitbucket"></i> {{ config.repo_name }}
+                            {%- else -%}
                             {{ config.repo_name }}
+                            {%- endif -%}
                         </a>
                     </li>
                 {%- endif %}
