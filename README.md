@@ -8,11 +8,11 @@ http://mkdocs.github.io/mkdocs-bootswatch/
 [![PyPI Version][pypi-v-image]][pypi-v-link]
 [![Build Status][travis-image]][travis-link]
 
-[pypi-dl-image]: https://img.shields.io/pypi/dm/mkdocs-bootswatch.png
+[pypi-dl-image]: https://img.shields.io/pypi/dm/mkdocs-bootswatch.svg
 [pypi-dl-link]: https://pypi.python.org/pypi/mkdocs-bootswatch
-[pypi-v-image]: https://img.shields.io/pypi/v/mkdocs-bootswatch.png
+[pypi-v-image]: https://img.shields.io/pypi/v/mkdocs-bootswatch.svg
 [pypi-v-link]: https://pypi.python.org/pypi/mkdocs-bootswatch
-[travis-image]: https://img.shields.io/travis/mkdocs/mkdocs-bootswatch/master.png
+[travis-image]: https://img.shields.io/travis/mkdocs/mkdocs-bootswatch/master.svg
 [travis-link]: https://travis-ci.org/mkdocs/mkdocs-bootswatch
 
 ## Contributing
