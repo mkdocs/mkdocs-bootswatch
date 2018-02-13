@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from distutils.core import Command
 import os
 
-VERSION = '0.4.0'
+VERSION = '0.5.0'
 
 
 class generate_themes(Command):
