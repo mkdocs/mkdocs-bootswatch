@@ -7,8 +7,12 @@ repo_url: https://github.com/mkdocs/mkdocs-bootswatch
 
 copyright: Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.
 
-theme_dir: mkdocs_bootswatch/flatly
+theme:
+    name: flatly
 
 markdown_extensions:
     - toc:
         permalink: '#'
+
+plugins:
+    - search
