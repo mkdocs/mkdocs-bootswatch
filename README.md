@@ -2,7 +2,7 @@
 
 See the documentation for more details:
 
-http://mkdocs.github.io/mkdocs-bootswatch/
+https://mkdocs.github.io/mkdocs-bootswatch/
 
 [![PyPI Downloads][pypi-dl-image]][pypi-dl-link]
 [![PyPI Version][pypi-v-image]][pypi-v-link]
