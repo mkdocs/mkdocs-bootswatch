@@ -1,3 +1,5 @@
 # Config options for 'flatly' theme
 
 extends: mkdocs
+
+hljs_style: docco

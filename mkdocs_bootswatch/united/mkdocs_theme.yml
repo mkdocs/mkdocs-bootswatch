@@ -1,3 +1,5 @@
 # Config options for 'united' theme
 
 extends: mkdocs
+
+hljs_style: github

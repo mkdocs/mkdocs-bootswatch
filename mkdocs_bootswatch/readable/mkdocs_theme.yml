@@ -1,3 +1,5 @@
 # Config options for 'readable' theme
 
 extends: mkdocs
+
+hljs_style: mono-blue

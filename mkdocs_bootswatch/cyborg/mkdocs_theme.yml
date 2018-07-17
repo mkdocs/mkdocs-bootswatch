@@ -1,3 +1,5 @@
 # Config options for 'cyborg' theme
 
 extends: mkdocs
+
+hljs_style: darcula
