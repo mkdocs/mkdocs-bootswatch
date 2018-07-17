@@ -1,3 +1,5 @@
 # Config options for 'amelia' theme
 
 extends: mkdocs
+
+hljs_style: agate

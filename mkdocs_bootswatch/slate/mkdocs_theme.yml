@@ -1,3 +1,5 @@
 # Config options for 'slate' theme
 
 extends: mkdocs
+
+hljs_style: darcula
