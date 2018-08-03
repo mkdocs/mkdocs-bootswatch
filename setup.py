@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from distutils.core import Command
 import os
 
-VERSION = '0.5.0'
+VERSION = '1.0'
 
 
 setup(
