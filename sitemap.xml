@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
-    <url>
-     <loc>http://mkdocs.github.io/mkdocs-bootswatch//</loc>
-     <lastmod>2018-02-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://mkdocs.github.io/mkdocs-bootswatch//examples/</loc>
-     <lastmod>2018-02-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-        
-    <url>
-     <loc>http://mkdocs.github.io/mkdocs-bootswatch//sub-dir/sub-page/</loc>
-     <lastmod>2018-02-13</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     <url>
      <loc>http://mkdocs.github.io/mkdocs-bootswatch/</loc>
-     <lastmod></lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
+    <url>
+     <loc>http://mkdocs.github.io/mkdocs-bootswatch/examples/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://mkdocs.github.io/mkdocs-bootswatch/sub-dir/sub-page/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://mkdocs.github.io/mkdocs-bootswatch/sub-dir/sub-dir-2/sub-page-2/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
 </urlset>
