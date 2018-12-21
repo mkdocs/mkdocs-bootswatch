@@ -85,8 +85,8 @@ Previews of the other themes can be seen below.
 ### Yeti
 ![Yeti](/screenshots/yeti.png)
 
-[Mkdocs]: http://www.mkdocs.org
-[mkdocs.yml]: http://www.mkdocs.org/user-guide/configuration/
-[theme]: http://www.mkdocs.org/user-guide/configuration/#theme
-[documentation]: http://mkdocs.github.io/mkdocs-bootstrap/
+[Mkdocs]: https://www.mkdocs.org
+[mkdocs.yml]: https://www.mkdocs.org/user-guide/configuration/
+[theme]: https://www.mkdocs.org/user-guide/configuration/#theme
+[documentation]: https://mkdocs.github.io/mkdocs-bootstrap/
 [Bootswatch]: https://bootswatch.com/
