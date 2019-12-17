@@ -18,13 +18,11 @@ After installation is complete, edit your [mkdocs.yml] config file and set the
 [theme] to one of the following Bootwatch themes included. The full list is as
 follows:
 
- - [amelia](#amelia)
  - [cerulean](#cerulean)
  - [cosmo](#cosmo)
  - [cyborg](#cyborg)
  - [flatly](#flatly)
  - [journal](#journal)
- - [readable](#readable)
  - [simplex](#simplex)
  - [slate](#slate)
  - [spacelab](#spacelab)
@@ -33,7 +31,7 @@ follows:
 
 For example:
 
-    theme: amelia
+    theme: cerulean
 
 Or:
 
@@ -49,9 +47,6 @@ In addition, you can request an inverted navigation header:
 This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
 Previews of the other themes can be seen below.
 
-### Amelia
-![Amelia](/screenshots/amelia.png)
-
 ### Cerulean
 ![Cerulean](/screenshots/cerulean.png)
 
@@ -66,9 +61,6 @@ Previews of the other themes can be seen below.
 
 ### Journal
 ![Journal](/screenshots/journal.png)
-
-### Readable
-![Readable](/screenshots/readable.png)
 
 ### Simplex
 ![Simplex](/screenshots/simplex.png)

@@ -19,13 +19,11 @@ setup(
     python_requires='>=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
     entry_points={
         'mkdocs.themes': [
-            'amelia = mkdocs_bootswatch.amelia',
             'cerulean = mkdocs_bootswatch.cerulean',
             'cosmo = mkdocs_bootswatch.cosmo',
             'cyborg = mkdocs_bootswatch.cyborg',
             'flatly = mkdocs_bootswatch.flatly',
             'journal = mkdocs_bootswatch.journal',
-            'readable = mkdocs_bootswatch.readable',
             'simplex = mkdocs_bootswatch.simplex',
             'slate = mkdocs_bootswatch.slate',
             'spacelab = mkdocs_bootswatch.spacelab',
