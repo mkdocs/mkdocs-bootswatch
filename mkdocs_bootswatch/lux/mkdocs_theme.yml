@@ -1,0 +1,5 @@
+# Config options for 'lux' theme
+
+extends: mkdocs
+
+hljs_style: color-brewer

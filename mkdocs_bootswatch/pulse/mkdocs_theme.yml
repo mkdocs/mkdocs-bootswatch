@@ -1,0 +1,5 @@
+# Config options for 'pulse' theme
+
+extends: mkdocs
+
+hljs_style: mono-blue

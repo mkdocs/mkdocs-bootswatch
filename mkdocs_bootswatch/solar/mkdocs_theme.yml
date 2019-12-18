@@ -1,0 +1,5 @@
+# Config options for 'solar' theme
+
+extends: mkdocs
+
+hljs_style: solarized-dark

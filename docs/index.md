@@ -21,11 +21,21 @@ follows:
  - [cerulean](#cerulean)
  - [cosmo](#cosmo)
  - [cyborg](#cyborg)
+ - [darkly](#darkly)
  - [flatly](#flatly)
  - [journal](#journal)
+ - [litera](#litera)
+ - [lumen](#lumen)
+ - [lux](#lux)
+ - [materia](#materia)
+ - [minty](#minty)
+ - [pulse](#pulse)
+ - [sandstone](#sandstone)
  - [simplex](#simplex)
  - [slate](#slate)
+ - [solar](#solar)
  - [spacelab](#spacelab)
+ - [superhero](#superhero)
  - [united](#united)
  - [yeti](#yeti)
 
@@ -59,11 +69,35 @@ Previews of the other themes can be seen below.
 ### Cyborg
 ![Cyborg](/screenshots/cyborg.png)
 
+### Darkly
+![Darkly](/screenshots/darkly.png)
+
 ### Flatly
 ![Flatly](/screenshots/flatly.png)
 
 ### Journal
 ![Journal](/screenshots/journal.png)
+
+### Litera
+![Litera](/screenshots/litera.png)
+
+### Lumen
+![Lumen](/screenshots/lumen.png)
+
+### Lux
+![Lux](/screenshots/lux.png)
+
+### Materia
+![Materia](/screenshots/materia.png)
+
+### Minty
+![Minty](/screenshots/minty.png)
+
+### Pulse
+![Pulse](/screenshots/pulse.png)
+
+### Sandstone
+![Sandstone](/screenshots/sandstone.png)
 
 ### Simplex
 ![Simplex](/screenshots/simplex.png)
@@ -71,8 +105,14 @@ Previews of the other themes can be seen below.
 ### Slate
 ![Slate](/screenshots/slate.png)
 
+### Solar
+![Solar](/screenshots/solar.png)
+
 ### Spacelab
 ![Spacelab](/screenshots/spacelab.png)
+
+### Superhero
+![Superhero](/screenshots/superhero.png)
 
 ### United
 ![United](/screenshots/united.png)

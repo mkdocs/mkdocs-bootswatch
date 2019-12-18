@@ -1,0 +1,5 @@
+# Config options for 'lumen' theme
+
+extends: mkdocs
+
+hljs_style: color-brewer
