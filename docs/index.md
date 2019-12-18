@@ -37,10 +37,13 @@ Or:
 
     theme: yeti
 
-In addition, you can request an inverted navigation header:
+As with the base `mkdocs` theme, you can request alternate colors for the
+navigation header. Allowed values are `primary` (the default), `dark`, and
+`light`:
 
-    extra:
-        theme_inverse: true
+    theme:
+        name: cerulean
+        nav_style: dark
 
 ## Screenshots
 
