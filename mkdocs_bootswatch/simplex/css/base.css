@@ -1,9 +1,16 @@
 html {
-    scroll-padding-top: 70px;
+    /* The nav header is 4.01875rem + 2px high, plus 20px for the margin-top of
+       the main container. */
+    scroll-padding-top: calc(4.01875rem + 2px + 20px);
 }
 
-body {
-    padding-top: 70px;
+body > .container {
+    margin-top: 20px;
+}
+
+.navbar.fixed-top {
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 ul.nav .main {
@@ -139,7 +146,9 @@ footer {
 .bs-sidebar.affix {
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
+    /* The nav header is 4.01875rem + 2px high, plus 20px for the margin-top of
+       the main container. */
+    top: calc(4.01875rem + 2px + 20px);
 }
 
 .bs-sidebar.card {
@@ -211,29 +220,25 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     display:inline-block;
 }
 
-/* display submenu relative to parent*/
-.dropdown-submenu {
-    position: relative;
+@media (max-width: 991.98px) {
+    .navbar-collapse.show {
+        overflow-y: auto;
+        max-height: calc(100vh - 4.01875rem - 2px);
+    }
 }
 
-/* sub menu stlye */
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: 0px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 4px 4px 4px;
-    -moz-border-radius: 0 4px 4px;
-    border-radius: 0 4px 4px 4px;
+.dropdown-item.open {
+    color: #fff;
+    background-color: #D9230F;
 }
 
-/* display sub menu on hover*/
-.dropdown-submenu:hover>.dropdown-menu {
-    display: block;
+.dropdown-submenu > .dropdown-menu {
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+    border-width: 0;
 }
 
-/* little arrow */
-.dropdown-submenu>a:after {
+.dropdown-submenu > a::after {
     display: block;
     content: " ";
     float: right;
@@ -247,7 +252,25 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
     margin-right: -10px;
 }
 
-/* little arrow of parent menu */
-.dropdown-submenu:hover>a:after {
+.dropdown-submenu:hover > a::after {
     border-left-color: #404040;
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu {
+        overflow-y: auto;
+        max-height: calc(100vh - 4.01875rem - 2px);
+    }
+
+    .dropdown-submenu {
+        position: relative;
+    }
+
+    .dropdown-submenu > .dropdown-menu {
+        position: fixed !important;
+        margin-top: -9px;
+        margin-left: -2px;
+        border-width: 1px;
+        padding: 0.5rem 0;
+    }
 }
