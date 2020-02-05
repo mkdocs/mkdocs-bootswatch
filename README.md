@@ -21,6 +21,19 @@ project hosted at <https://github.com/mkdocs/mkdocs>.
 
 ## Release Notes
 
+### Version 1.1 (2020/??/??)
+
+* Update to support MkDocs version 1.1.
+* Update to support Bootstrap 4.
+    * Remove the `amelia` and `readable` themes, which were dropped by Bootswatch.
+    * Add Bootswatch's new themes: `darkly`, `litera`, `lumen`, `lux`, `materia`,
+      `minty`, `pulse`, `sandstone`, `solar`, and `superhero`.
+* Port changes from the parent `mkdocs` theme:
+    * [Properly handle the scroll offset for anchors](https://github.com/mkdocs/mkdocs/pull/1935).
+    * [Improve support for long dropdowns](https://github.com/mkdocs/mkdocs/pull/1967).
+    * [Improve support for tall nav headers](https://github.com/mkdocs/mkdocs/pull/1969)
+* Fix padding/background color issues with hljs code blocks.
+
 ### Version 1.0 (2018/08/03)
 
 * Inherit from the `mkdocs` theme and get all the parent theme's features.
@@ -38,7 +51,7 @@ project hosted at <https://github.com/mkdocs/mkdocs>.
 
 ### Version 0.4 (2016/03/02)
 
-* Some styling tweawks.
+* Some styling tweaks.
 * Add support for permalinks.
 * Support inverse nav headers.
 
