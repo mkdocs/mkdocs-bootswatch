@@ -32,6 +32,7 @@ project hosted at <https://github.com/mkdocs/mkdocs>.
     * [Properly handle the scroll offset for anchors](https://github.com/mkdocs/mkdocs/pull/1935).
     * [Improve support for long dropdowns](https://github.com/mkdocs/mkdocs/pull/1967).
     * [Improve support for tall nav headers](https://github.com/mkdocs/mkdocs/pull/1969)
+    * [Use toc_tokens to generate the TOC](https://github.com/mkdocs/mkdocs/pull/1970)
 * Fix padding/background color issues with hljs code blocks.
 
 ### Version 1.0 (2018/08/03)
