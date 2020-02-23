@@ -21,7 +21,7 @@ project hosted at <https://github.com/mkdocs/mkdocs>.
 
 ## Release Notes
 
-### Version 1.1 (2020/??/??)
+### Version 1.1 (2020/02/22)
 
 * Update to support MkDocs version 1.1.
 * Update to support Bootstrap 4.
