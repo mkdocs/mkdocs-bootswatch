@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from distutils.core import Command
 import os
 
-VERSION = '1.1.dev0'
+VERSION = '1.1'
 
 
 setup(
@@ -15,7 +15,7 @@ setup(
     author_email='dougal@dougalmatthews.com',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=['mkdocs>=1.1.dev0'],
+    install_requires=['mkdocs>=1.1'],
     python_requires='>=3.5',
     entry_points={
         'mkdocs.themes': [
