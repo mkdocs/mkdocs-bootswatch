@@ -9,8 +9,20 @@ function getSearchTermFromLocation() {
   }
 }
 
+function joinUrl (base, path) {
+  if (path.substring(0, 1) === "/") {
+    // path starts with `/`. Thus it is absolute.
+    return path;
+  }
+  if (base.substring(base.length-1) === "/") {
+    // base ends with `/`
+    return base + path;
+  }
+  return base + "/" + path;
+}
+
 function formatResult (location, title, summary) {
-  return '<article><h3><a href="' + base_url + '/' + location + '">'+ title + '</a></h3><p>' + summary +'</p></article>';
+  return '<article><h3><a href="' + joinUrl(base_url, location) + '">'+ title + '</a></h3><p>' + summary +'</p></article>';
 }
 
 function displayResults (results) {
@@ -32,7 +44,6 @@ function displayResults (results) {
 function doSearch () {
   var query = document.getElementById('mkdocs-search-query').value;
   if (query.length > 2) {
-    console.log('Searching with query: ' + query);
     if (!window.Worker) {
       displayResults(search(query));
     } else {
@@ -49,7 +60,6 @@ function initSearch () {
   if (search_input) {
     search_input.addEventListener("keyup", doSearch);
   }
-
   var term = getSearchTermFromLocation();
   if (term) {
     search_input.value = term;
@@ -58,7 +68,9 @@ function initSearch () {
 }
 
 function onWorkerMessage (e) {
-  if (e.data.results) {
+  if (e.data.allowSearch) {
+    initSearch();
+  } else if (e.data.results) {
     var results = e.data.results;
     displayResults(results);
   }
@@ -67,28 +79,18 @@ function onWorkerMessage (e) {
 if (!window.Worker) {
   console.log('Web Worker API not supported');
   // load index in main thread
-  $.getScript(base_url + "/search/worker.js").done(function () {
+  $.getScript(joinUrl(base_url, "search/worker.js")).done(function () {
     console.log('Loaded worker');
     init();
+    window.postMessage = function (msg) {
+      onWorkerMessage({data: msg});
+    };
   }).fail(function (jqxhr, settings, exception) {
     console.error('Could not load worker.js');
   });
 } else {
   // Wrap search in a web worker
-  var searchWorker = new Worker(base_url + "/search/worker.js");
+  var searchWorker = new Worker(joinUrl(base_url, "search/worker.js"));
   searchWorker.postMessage({init: true});
   searchWorker.onmessage = onWorkerMessage;
 }
-
-$(function() {
-  var search_input = document.getElementById('mkdocs-search-query');
-  if (search_input) {
-    search_input.addEventListener("keyup", doSearch);
-  }
-
-  var term = getSearchTermFromLocation();
-  if (term) {
-    search_input.value = term;
-    doSearch();
-  }
-});

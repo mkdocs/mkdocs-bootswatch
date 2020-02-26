@@ -9,63 +9,50 @@
         
         <link rel="shortcut icon" href="/mkdocs-bootswatch/img/favicon.ico">
         <title>MkDocs Bootswatch Themes</title>
-        <link href="/mkdocs-bootswatch/css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="/mkdocs-bootswatch/css/bootstrap.min.css" rel="stylesheet">
         <link href="/mkdocs-bootswatch/css/font-awesome.min.css" rel="stylesheet">
         <link href="/mkdocs-bootswatch/css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="/mkdocs-bootswatch/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/mkdocs-bootswatch/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="/mkdocs-bootswatch/js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/mkdocs-bootswatch/.">MkDocs Bootswatch Themes</a>
-                </div>
+                <a class="navbar-brand" href="/mkdocs-bootswatch/.">MkDocs Bootswatch Themes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="/mkdocs-bootswatch/.">Home</a>
+                            <li class="navitem">
+                                <a href="/mkdocs-bootswatch/." class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="/mkdocs-bootswatch/examples/">Examples</a>
+                            <li class="navitem">
+                                <a href="/mkdocs-bootswatch/examples/" class="nav-link">Examples</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub dir <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sub dir <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="/mkdocs-bootswatch/sub-dir/sub-page/">Sub page</a>
+<li>
+    <a href="/mkdocs-bootswatch/sub-dir/sub-page/" class="dropdown-item">Sub page</a>
 </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#">Sub dir 2</a>
+    <a href="#" class="dropdown-item">Sub dir 2</a>
     <ul class="dropdown-menu">
             
-<li >
-    <a href="/mkdocs-bootswatch/sub-dir/sub-dir-2/sub-page-2/">Sub Page 2</a>
+<li>
+    <a href="/mkdocs-bootswatch/sub-dir/sub-dir-2/sub-page-2/" class="dropdown-item">Sub Page 2</a>
 </li>
     </ul>
   </li>
@@ -73,14 +60,14 @@
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li>
-                                <a href="https://github.com/mkdocs/mkdocs-bootswatch/"><i class="fa fa-github"></i> GitHub</a>
+                            <li class="nav-item">
+                                <a href="https://github.com/mkdocs/mkdocs-bootswatch/" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -88,6 +75,7 @@
         </div>
 
         <div class="container">
+            <div class="row">
 
     <div class="row-fluid">
       <div id="main-content" class="span12">
@@ -97,6 +85,7 @@
     </div>
 
 
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -105,25 +94,25 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/mkdocs-bootswatch",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+            var base_url = "/mkdocs-bootswatch/",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="/mkdocs-bootswatch/js/base.js" defer></script>
         <script src="/mkdocs-bootswatch/search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -134,12 +123,12 @@
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">

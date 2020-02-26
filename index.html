@@ -6,66 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="MkDocs Bootswatch Themes">
         <meta name="author" content="Tom Christie & Dougal Matthews">
-        <link rel="canonical" href="http://mkdocs.github.io/mkdocs-bootswatch/">
+        <link rel="canonical" href="https://mkdocs.github.io/mkdocs-bootswatch/">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>MkDocs Bootswatch Themes</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/docco.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
         <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
     <body class="homepage">
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">MkDocs Bootswatch Themes</a>
-                </div>
+                <a class="navbar-brand" href=".">MkDocs Bootswatch Themes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href=".">Home</a>
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="examples/">Examples</a>
+                            <li class="navitem">
+                                <a href="examples/" class="nav-link">Examples</a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sub dir <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sub dir <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="sub-dir/sub-page/">Sub page</a>
+<li>
+    <a href="sub-dir/sub-page/" class="dropdown-item">Sub page</a>
 </li>
                                     
   <li class="dropdown-submenu">
-    <a href="#">Sub dir 2</a>
+    <a href="#" class="dropdown-item">Sub dir 2</a>
     <ul class="dropdown-menu">
             
-<li >
-    <a href="sub-dir/sub-dir-2/sub-page-2/">Sub Page 2</a>
+<li>
+    <a href="sub-dir/sub-dir-2/sub-page-2/" class="dropdown-item">Sub Page 2</a>
 </li>
     </ul>
   </li>
@@ -73,24 +60,24 @@
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="disabled">
-                                <a rel="next" >
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="examples/">
+                            <li class="nav-item">
+                                <a rel="next" href="examples/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/mkdocs/mkdocs-bootswatch/edit/master/docs/index.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            <li class="nav-item">
+                                <a href="https://github.com/mkdocs/mkdocs-bootswatch/edit/master/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -98,77 +85,125 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#mkdocs-bootstrap-theme">MkDocs Bootstrap Theme</a></li>
-            <li><a href="#installation-usage">Installation &amp; Usage</a></li>
-            <li><a href="#screenshots">Screenshots</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#mkdocs-bootstrap-theme" class="nav-link">MkDocs Bootstrap Theme</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#installation-usage" class="nav-link">Installation &amp; Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#screenshots" class="nav-link">Screenshots</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h1 id="mkdocs-bootstrap-theme">MkDocs Bootstrap Theme<a class="headerlink" href="#mkdocs-bootstrap-theme" title="Permanent link">#</a></h1>
-<p>This project provides <a href="http://www.mkdocs.org">MkDocs</a> themes for the different Bootstrap themes
+<p>This project provides <a href="https://www.mkdocs.org">MkDocs</a> themes for the different Bootstrap themes
 provided by the <a href="https://bootswatch.com/">Bootswatch</a> project.</p>
 <h2 id="installation-usage">Installation &amp; Usage<a class="headerlink" href="#installation-usage" title="Permanent link">#</a></h2>
 <p>Install the collection of themes with pip, which is hopefully how you
 installed MkDocs.</p>
 <pre><code>pip install mkdocs-bootswatch
 </code></pre>
-<p>After installation is complete, edit your <a href="http://www.mkdocs.org/user-guide/configuration/">mkdocs.yml</a> config file and set the
-<a href="http://www.mkdocs.org/user-guide/configuration/#theme">theme</a> to one of the following Bootwatch themes included. The full list is as
+<p>After installation is complete, edit your <a href="https://www.mkdocs.org/user-guide/configuration/">mkdocs.yml</a> config file and set the
+<a href="https://www.mkdocs.org/user-guide/configuration/#theme">theme</a> to one of the following Bootwatch themes included. The full list is as
 follows:</p>
 <ul>
-<li><a href="#amelia">amelia</a></li>
 <li><a href="#cerulean">cerulean</a></li>
 <li><a href="#cosmo">cosmo</a></li>
 <li><a href="#cyborg">cyborg</a></li>
+<li><a href="#darkly">darkly</a></li>
 <li><a href="#flatly">flatly</a></li>
 <li><a href="#journal">journal</a></li>
-<li><a href="#readable">readable</a></li>
+<li><a href="#litera">litera</a></li>
+<li><a href="#lumen">lumen</a></li>
+<li><a href="#lux">lux</a></li>
+<li><a href="#materia">materia</a></li>
+<li><a href="#minty">minty</a></li>
+<li><a href="#pulse">pulse</a></li>
+<li><a href="#sandstone">sandstone</a></li>
 <li><a href="#simplex">simplex</a></li>
 <li><a href="#slate">slate</a></li>
+<li><a href="#solar">solar</a></li>
 <li><a href="#spacelab">spacelab</a></li>
+<li><a href="#superhero">superhero</a></li>
 <li><a href="#united">united</a></li>
 <li><a href="#yeti">yeti</a></li>
 </ul>
 <p>For example:</p>
-<pre><code>theme: amelia
+<pre><code>theme: cerulean
 </code></pre>
 <p>Or:</p>
 <pre><code>theme: yeti
 </code></pre>
-<p>In addition, you can request an inverted navigation header:</p>
-<pre><code>extra:
-    theme_inverse: true
+<p>As with the base <code>mkdocs</code> theme, you can request alternate colors for the
+navigation header. Allowed values are <code>primary</code> (the default), <code>dark</code>, and
+<code>light</code>:</p>
+<pre><code>theme:
+    name: cerulean
+    nav_style: dark
 </code></pre>
 <h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">#</a></h2>
-<p>This <a href="http://mkdocs.github.io/mkdocs-bootstrap/">documentation</a> is rendered with the Bootswatch <a href="#flatly">Flatly</a> theme.
+<p>This <a href="https://mkdocs.github.io/mkdocs-bootstrap/">documentation</a> is rendered with the Bootswatch <a href="#flatly">Flatly</a> theme.
 Previews of the other themes can be seen below.</p>
-<h3 id="amelia">Amelia<a class="headerlink" href="#amelia" title="Permanent link">#</a></h3>
-<p><img alt="Amelia" src="screenshots/amelia.png" /></p>
 <h3 id="cerulean">Cerulean<a class="headerlink" href="#cerulean" title="Permanent link">#</a></h3>
-<p><img alt="Cerulean" src="screenshots/cerulean.png" /></p>
+<p><img alt="Cerulean" src="/screenshots/cerulean.png" /></p>
 <h3 id="cosmo">Cosmo<a class="headerlink" href="#cosmo" title="Permanent link">#</a></h3>
-<p><img alt="Cosmo" src="screenshots/cosmo.png" /></p>
+<p><img alt="Cosmo" src="/screenshots/cosmo.png" /></p>
 <h3 id="cyborg">Cyborg<a class="headerlink" href="#cyborg" title="Permanent link">#</a></h3>
-<p><img alt="Cyborg" src="screenshots/cyborg.png" /></p>
+<p><img alt="Cyborg" src="/screenshots/cyborg.png" /></p>
+<h3 id="darkly">Darkly<a class="headerlink" href="#darkly" title="Permanent link">#</a></h3>
+<p><img alt="Darkly" src="/screenshots/darkly.png" /></p>
 <h3 id="flatly">Flatly<a class="headerlink" href="#flatly" title="Permanent link">#</a></h3>
-<p><img alt="Flatly" src="screenshots/flatly.png" /></p>
+<p><img alt="Flatly" src="/screenshots/flatly.png" /></p>
 <h3 id="journal">Journal<a class="headerlink" href="#journal" title="Permanent link">#</a></h3>
-<p><img alt="Journal" src="screenshots/journal.png" /></p>
-<h3 id="readable">Readable<a class="headerlink" href="#readable" title="Permanent link">#</a></h3>
-<p><img alt="Readable" src="screenshots/readable.png" /></p>
+<p><img alt="Journal" src="/screenshots/journal.png" /></p>
+<h3 id="litera">Litera<a class="headerlink" href="#litera" title="Permanent link">#</a></h3>
+<p><img alt="Litera" src="/screenshots/litera.png" /></p>
+<h3 id="lumen">Lumen<a class="headerlink" href="#lumen" title="Permanent link">#</a></h3>
+<p><img alt="Lumen" src="/screenshots/lumen.png" /></p>
+<h3 id="lux">Lux<a class="headerlink" href="#lux" title="Permanent link">#</a></h3>
+<p><img alt="Lux" src="/screenshots/lux.png" /></p>
+<h3 id="materia">Materia<a class="headerlink" href="#materia" title="Permanent link">#</a></h3>
+<p><img alt="Materia" src="/screenshots/materia.png" /></p>
+<h3 id="minty">Minty<a class="headerlink" href="#minty" title="Permanent link">#</a></h3>
+<p><img alt="Minty" src="/screenshots/minty.png" /></p>
+<h3 id="pulse">Pulse<a class="headerlink" href="#pulse" title="Permanent link">#</a></h3>
+<p><img alt="Pulse" src="/screenshots/pulse.png" /></p>
+<h3 id="sandstone">Sandstone<a class="headerlink" href="#sandstone" title="Permanent link">#</a></h3>
+<p><img alt="Sandstone" src="/screenshots/sandstone.png" /></p>
 <h3 id="simplex">Simplex<a class="headerlink" href="#simplex" title="Permanent link">#</a></h3>
-<p><img alt="Simplex" src="screenshots/simplex.png" /></p>
+<p><img alt="Simplex" src="/screenshots/simplex.png" /></p>
 <h3 id="slate">Slate<a class="headerlink" href="#slate" title="Permanent link">#</a></h3>
-<p><img alt="Slate" src="screenshots/slate.png" /></p>
+<p><img alt="Slate" src="/screenshots/slate.png" /></p>
+<h3 id="solar">Solar<a class="headerlink" href="#solar" title="Permanent link">#</a></h3>
+<p><img alt="Solar" src="/screenshots/solar.png" /></p>
 <h3 id="spacelab">Spacelab<a class="headerlink" href="#spacelab" title="Permanent link">#</a></h3>
-<p><img alt="Spacelab" src="screenshots/spacelab.png" /></p>
+<p><img alt="Spacelab" src="/screenshots/spacelab.png" /></p>
+<h3 id="superhero">Superhero<a class="headerlink" href="#superhero" title="Permanent link">#</a></h3>
+<p><img alt="Superhero" src="/screenshots/superhero.png" /></p>
 <h3 id="united">United<a class="headerlink" href="#united" title="Permanent link">#</a></h3>
-<p><img alt="United" src="screenshots/united.png" /></p>
+<p><img alt="United" src="/screenshots/united.png" /></p>
 <h3 id="yeti">Yeti<a class="headerlink" href="#yeti" title="Permanent link">#</a></h3>
-<p><img alt="Yeti" src="screenshots/yeti.png" /></p></div>
+<p><img alt="Yeti" src="/screenshots/yeti.png" /></p></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -178,24 +213,24 @@ Previews of the other themes can be seen below.</p>
         </footer>
         <script>
             var base_url = ".",
-                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js" defer></script>
         <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
@@ -206,12 +241,12 @@ Previews of the other themes can be seen below.</p>
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
@@ -251,6 +286,6 @@ Previews of the other themes can be seen below.</p>
 </html>
 
 <!--
-MkDocs version : 1.0
-Build Date UTC : 2018-08-03 16:45:09
+MkDocs version : 1.1
+Build Date UTC : 2020-02-26 04:14:28
 -->
