@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://mkdocs.github.io/mkdocs-bootswatch/</loc>
-     <lastmod>2020-02-25</lastmod>
+     <lastmod>2020-02-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mkdocs.github.io/mkdocs-bootswatch/examples/</loc>
-     <lastmod>2020-02-25</lastmod>
+     <lastmod>2020-02-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mkdocs.github.io/mkdocs-bootswatch/sub-dir/sub-page/</loc>
-     <lastmod>2020-02-25</lastmod>
+     <lastmod>2020-02-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mkdocs.github.io/mkdocs-bootswatch/sub-dir/sub-dir-2/sub-page-2/</loc>
-     <lastmod>2020-02-25</lastmod>
+     <lastmod>2020-02-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
