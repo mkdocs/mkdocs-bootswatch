@@ -61,64 +61,64 @@ This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
 Previews of the other themes can be seen below.
 
 ### Cerulean
-![Cerulean](/screenshots/cerulean.png)
+![Cerulean](screenshots/cerulean.png)
 
 ### Cosmo
-![Cosmo](/screenshots/cosmo.png)
+![Cosmo](screenshots/cosmo.png)
 
 ### Cyborg
-![Cyborg](/screenshots/cyborg.png)
+![Cyborg](screenshots/cyborg.png)
 
 ### Darkly
-![Darkly](/screenshots/darkly.png)
+![Darkly](screenshots/darkly.png)
 
 ### Flatly
-![Flatly](/screenshots/flatly.png)
+![Flatly](screenshots/flatly.png)
 
 ### Journal
-![Journal](/screenshots/journal.png)
+![Journal](screenshots/journal.png)
 
 ### Litera
-![Litera](/screenshots/litera.png)
+![Litera](screenshots/litera.png)
 
 ### Lumen
-![Lumen](/screenshots/lumen.png)
+![Lumen](screenshots/lumen.png)
 
 ### Lux
-![Lux](/screenshots/lux.png)
+![Lux](screenshots/lux.png)
 
 ### Materia
-![Materia](/screenshots/materia.png)
+![Materia](screenshots/materia.png)
 
 ### Minty
-![Minty](/screenshots/minty.png)
+![Minty](screenshots/minty.png)
 
 ### Pulse
-![Pulse](/screenshots/pulse.png)
+![Pulse](screenshots/pulse.png)
 
 ### Sandstone
-![Sandstone](/screenshots/sandstone.png)
+![Sandstone](screenshots/sandstone.png)
 
 ### Simplex
-![Simplex](/screenshots/simplex.png)
+![Simplex](screenshots/simplex.png)
 
 ### Slate
-![Slate](/screenshots/slate.png)
+![Slate](screenshots/slate.png)
 
 ### Solar
-![Solar](/screenshots/solar.png)
+![Solar](screenshots/solar.png)
 
 ### Spacelab
-![Spacelab](/screenshots/spacelab.png)
+![Spacelab](screenshots/spacelab.png)
 
 ### Superhero
-![Superhero](/screenshots/superhero.png)
+![Superhero](screenshots/superhero.png)
 
 ### United
-![United](/screenshots/united.png)
+![United](screenshots/united.png)
 
 ### Yeti
-![Yeti](/screenshots/yeti.png)
+![Yeti](screenshots/yeti.png)
 
 [Mkdocs]: https://www.mkdocs.org
 [mkdocs.yml]: https://www.mkdocs.org/user-guide/configuration/
