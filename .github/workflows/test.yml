@@ -1,0 +1,48 @@
+name: test
+
+on:
+  pull_request:
+    branches:
+      - "**"
+
+jobs:
+  test:
+    name: build themes
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+          ["3.8", "3.9", "3.10", "3.11", "pypy-3.8", "pypy-3.9", "pypy-3.10"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip setuptools
+          python -m pip install .
+      - name: Build Themes
+        run: |
+          mkdocs build -v --strict --theme cerulean --site-dir=${{ runner.temp }}/cerulean
+          mkdocs build -v --strict --theme cosmo --site-dir=${{ runner.temp }}/cosmo
+          mkdocs build -v --strict --theme cyborg --site-dir=${{ runner.temp }}/cyborg
+          mkdocs build -v --strict --theme darkly --site-dir=${{ runner.temp }}/darkly
+          mkdocs build -v --strict --theme flatly --site-dir=${{ runner.temp }}/flatly
+          mkdocs build -v --strict --theme journal --site-dir=${{ runner.temp }}/journal
+          mkdocs build -v --strict --theme litera --site-dir=${{ runner.temp }}/litera
+          mkdocs build -v --strict --theme lumen --site-dir=${{ runner.temp }}/lumen
+          mkdocs build -v --strict --theme lux --site-dir=${{ runner.temp }}/lux
+          mkdocs build -v --strict --theme materia --site-dir=${{ runner.temp }}/materia
+          mkdocs build -v --strict --theme minty --site-dir=${{ runner.temp }}/minty
+          mkdocs build -v --strict --theme pulse --site-dir=${{ runner.temp }}/pulse
+          mkdocs build -v --strict --theme sandstone --site-dir=${{ runner.temp }}/sandstone
+          mkdocs build -v --strict --theme simplex --site-dir=${{ runner.temp }}/simplex
+          mkdocs build -v --strict --theme slate --site-dir=${{ runner.temp }}/slate
+          mkdocs build -v --strict --theme solar --site-dir=${{ runner.temp }}/solar
+          mkdocs build -v --strict --theme spacelab --site-dir=${{ runner.temp }}/spacelab
+          mkdocs build -v --strict --theme superhero --site-dir=${{ runner.temp }}/superhero
+          mkdocs build -v --strict --theme united --site-dir=${{ runner.temp }}/united
+          mkdocs build -v --strict --theme yeti --site-dir=${{ runner.temp }}/yeti
